@@ -8,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  public auth: string;
   public pokemon: string;
+
+  constructor() { }
 
   ngOnInit(): void {
     this.pokemon = '/assets/pokeball.png';
+    this.auth = sessionStorage.getItem('user');
   }
 
 }

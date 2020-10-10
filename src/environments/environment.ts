@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  hostname : 'http://localhost:4200',
   firebase: {
     apiKey: 'AIzaSyDNqEQh_9XN-fR5BD-a1HEJkCbwzzqOP1I',
     authDomain: 'pokxfan.firebaseapp.com',

@@ -23,9 +23,12 @@
     "@angular/router": "~10.0.4",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
     "@popperjs/core": "^2.5.3",
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "firebase": "^7.23.0",
+    "ionicons-npm": "^2.0.1",
     "jquery": "^3.5.1",
+    "ngx-order-pipe": "^2.1.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

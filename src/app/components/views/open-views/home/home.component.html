@@ -1,16 +1,17 @@
-<app-sign></app-sign>
-<section id="app-web-pokedex-home">
-    <h1>Bienvenido entrenador</h1>
-    <img [src]="pokemon" alt="pokemon" />
-    <div class="message">
-        <h4>
-            Esta es una plataforma para encontrar <b>Pokemons</b>
-        </h4>
-        <p>
-            Recordemos a nuestros monstruos de bolsillo favoritos y quizá
-            conocer más sobre ellos. <br>
-            ¿Crees estar listo? 
-        </p>
-    </div>
-
-</section>
+<div *ngIf="!auth">
+    <app-sign></app-sign>
+    <section id="app-web-pokedex-home">
+        <h1>Bienvenido entrenador</h1>
+        <img [src]="pokemon" alt="pokemon" />
+        <div class="message">
+            <h4>
+                Esta es una plataforma para encontrar <b>Pokemons</b>
+            </h4>
+            <p>
+                Recordemos a nuestros monstruos de bolsillo favoritos y quizá
+                conocer más sobre ellos. <br>
+                ¿Crees estar listo? 
+            </p>
+        </div>
+    </section>
+</div>

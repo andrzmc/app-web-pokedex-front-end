@@ -1,0 +1,132 @@
+#app-web-pokedex-menu-vertical {
+    background-color: #2C3039;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    z-index: 1100;
+}
+
+#app-web-pokedex-menu-vertical .logo {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    background-color: #e73c7e;
+}
+
+#app-web-pokedex-menu-vertical .logo img{
+    width: 100%;
+    height: 50px;
+}
+
+#app-web-pokedex-menu-vertical .navigation{
+    max-width: 100%;
+}
+
+#app-web-pokedex-menu-vertical .navigation ul{
+    list-style: none;
+    color: #fbfbfb;
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#app-web-pokedex-menu-vertical .navigation ul::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+#app-web-pokedex-menu-vertical .navigation ul::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+#app-web-pokedex-menu-vertical .navigation ul::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 3px;
+}
+
+#app-web-pokedex-menu-vertical .navigation ul::-webkit-scrollbar-thumb:hover {
+    background: #444; 
+}
+
+#app-web-pokedex-menu-vertical .navigation ul li {
+    text-align: left;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 30%;
+}
+
+#app-web-pokedex-menu-vertical .navigation a {
+    font-size: 1.5em;
+    color: #fbfbfb !important;
+}
+
+#app-web-pokedex-menu-vertical .navigation a svg{
+    font-size: 1.5em;
+    color: #fbfbfb !important;
+}
+
+#app-web-pokedex-menu-vertical .navigation a:hover {
+    color: #fbfbfb !important;
+}
+
+
+/* Media Screen */
+@media only screen and (max-width: 1920px) {
+    #app-web-pokedex-menu-vertical {
+        width: 70px;
+    }
+    #app-web-pokedex-menu-vertical .logo img{
+        height: 50px;
+        width: 50px;
+    }
+    #app-web-pokedex-menu-vertical .navigation ul li {
+        padding-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #app-web-pokedex-menu-vertical {
+        width: 60px;
+    }
+    #app-web-pokedex-menu-vertical .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    #app-web-pokedex-menu-vertical .navigation ul li {
+        padding-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    #app-web-pokedex-menu-vertical {
+        width: 55px;
+    }
+    #app-web-pokedex-menu-vertical .logo img{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #app-web-pokedex-menu-vertical {
+        width: 50px;
+    }
+    #app-web-pokedex-menu-vertical .logo img{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #app-web-pokedex-menu-vertical {
+        display: none;
+    }
+}

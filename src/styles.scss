@@ -1,4 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
+@import '~ionicons-npm/css/ionicons.css';
 
 html {
   scroll-behavior: smooth;
@@ -35,3 +37,10 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #444; 
 }
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {outline:0;}

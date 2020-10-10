@@ -1,0 +1,14 @@
+<nav id="app-web-pokedex-menu-horizontal">
+    <div class="activities">
+        <ul class="activities-items">
+            <li ngbDropdown class="activities-item">
+                <i id="dropdownMenu" ngbDropdownToggle class="ion-navicon-round"></i>
+                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
+                    <button ngbDropdownItem>Action - 1</button>
+                    <button ngbDropdownItem>Another Action</button>
+                    <button ngbDropdownItem (click)="signOut()">Salir</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

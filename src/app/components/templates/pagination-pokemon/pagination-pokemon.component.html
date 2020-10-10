@@ -1,0 +1,29 @@
+<section id="app-web-pokedex-pagination-pokemon">
+    <div class="paginations">
+        <button *ngIf="previous" class="previous" (click)="setCatalogue(previous)">
+            <i class="ion-android-arrow-back"></i> Anterior
+        </button>
+        <button *ngIf="next" class="next" (click)="setCatalogue(next)">
+            Siguiente <i class="ion-android-arrow-forward"></i>
+        </button>
+    </div>
+    <div class="cards">
+        <div class="card" *ngFor="let p of catalogue | orderBy: 'id'">
+            <h3>{{p.name}}</h3>
+            <div class="side-img">            
+                <img [src]="p.sprites.other.dream_world.front_default" alt="{{p.name}}"/>
+            </div>
+            <div class="side-description">
+                <app-description [descriptionChildren]="p.species.url"></app-description>
+            </div>
+        </div>
+    </div>
+    <div class="paginations">
+        <button *ngIf="previous" class="previous" (click)="setCatalogue(previous)">
+            <i class="ion-android-arrow-back"></i> Anterior
+        </button>
+        <button *ngIf="next" class="next" (click)="setCatalogue(next)">
+            Siguiente <i class="ion-android-arrow-forward"></i>
+        </button>
+    </div>
+</section>

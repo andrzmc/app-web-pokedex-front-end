@@ -10,7 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-
+import { HttpClientModule } from '@angular/common/http';
+import { OrderModule } from 'ngx-order-pipe';
 
 // Components
 import { HomeComponent } from './components/views/open-views/home/home.component';
@@ -18,6 +19,10 @@ import { SignComponent } from './components/templates/sign/sign.component';
 import { SignInComponent } from './components/templates/sign-in/sign-in.component';
 import { SignUpComponent } from './components/templates/sign-up/sign-up.component';
 import { MainComponent } from './components/views/auth-views/main/main.component';
+import { MenuHorizontalComponent } from './components/templates/menu-horizontal/menu-horizontal.component';
+import { MenuVerticalComponent } from './components/templates/menu-vertical/menu-vertical.component';
+import { PaginationPokemonComponent } from './components/templates/pagination-pokemon/pagination-pokemon.component';
+import { DescriptionComponent } from './components/templates/description/description.component';
 
 
 @NgModule({
@@ -27,7 +32,11 @@ import { MainComponent } from './components/views/auth-views/main/main.component
     SignComponent,
     SignInComponent,
     SignUpComponent,
-    MainComponent
+    MainComponent,
+    MenuHorizontalComponent,
+    MenuVerticalComponent,
+    PaginationPokemonComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +46,9 @@ import { MainComponent } from './components/views/auth-views/main/main.component
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    HttpClientModule,
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
