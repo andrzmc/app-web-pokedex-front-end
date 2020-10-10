@@ -1,0 +1,38 @@
+form .error {
+    text-align: center;
+    color: #D7332C;
+    font-size: 1em;
+}
+
+form input {
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    width: 80%;
+    margin: 1em 10%;
+}
+
+form input:hover {
+    border-bottom: 1px #e73c7e solid;
+}
+
+form input:active {
+    border-bottom: 1px #e73c7e solid;
+}
+
+form input:focus {
+    border-bottom: 1px #e73c7e solid;
+}
+
+form button {
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 50%;
+    margin: 1em 25%;
+    border: none;
+    background-color: #e73c7e;
+    color: #fff;
+}

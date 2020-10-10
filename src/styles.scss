@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    color: #262626;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444; 
+}

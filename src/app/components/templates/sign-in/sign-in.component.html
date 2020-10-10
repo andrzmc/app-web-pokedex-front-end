@@ -1,0 +1,6 @@
+<form [formGroup]="loginForm"  (ngSubmit)="onSubmit()">
+    <div class="error" *ngIf="error">{{errorMessage}}</div>
+    <input type="email" formControlName="email" placeholder="my@email.com" required>
+    <input type="password" formControlName="password" placeholder="******" required>
+    <button type="submit">Acceder</button>
+</form>

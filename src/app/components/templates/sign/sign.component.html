@@ -1,0 +1,30 @@
+<section id="app-web-pokedex-sign">
+    <h1 *ngIf="form">Acceder a POKEXFAN</h1>
+    <h1 *ngIf="!form">Registrarse en POKEXFAN</h1>
+    <img [src]="pokemon" alt="pokemon-login"/>
+    <app-sign-in *ngIf="form"></app-sign-in>
+    <app-sign-up *ngIf="!form"></app-sign-up>
+    <div class="go-to" *ngIf="form">
+        ¿No tienes cuenta? <a (click)="changeViewForm(!form)">Crea una</a>
+    </div>
+    <div class="go-to" *ngIf="!form">
+        ¡Vaya! ya estás registrado <a (click)="changeViewForm(!form)">Acceder</a>
+    </div>
+    <div class="copyright">
+        <p>
+            La siguiente plataforma es una demo basada en la éxitosa franquicia 
+            <a href="https://www.pokemon.com/el/">Pokemon</a>.
+            Hecho por fans para fans, no se pretende lucrar de ninguna manera, sólo es diversión.
+        </p>
+        <p>
+            <a href="https://www.pokemon.com/el/">Pokemon</a> es una creación de 
+            <a href="https://es.wikipedia.org/wiki/Satoshi_Tajiri">Satoshi Tajiri</a>, 
+            <a href="https://es.wikipedia.org/wiki/Ken_Sugimori">Ken Sugimori</a>, 
+            <a href="https://www.gamefreak.co.jp/">Game Freak</a> y
+            <a href="https://www.nintendo.com/">Nintendo</a>
+        </p>
+        <p>
+            ¡Por favor apoyen al original!
+        </p>
+    </div>
+</section>
