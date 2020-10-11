@@ -25,7 +25,7 @@
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    width: 31%;
+    width: 23%;
     margin: 1em 1%;
     padding: 1em;
     border-radius: 0;
@@ -37,8 +37,8 @@
 }
 
 #app-web-pokedex-my-pokemon .cards .card h3 {
-    font-weight: 300;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
     text-transform: capitalize;
     width: 100%;
 }
@@ -48,6 +48,7 @@
     border: none;
     background-color: transparent;
     color: #ccc;
+    font-size: 1em;
 }
 
 #app-web-pokedex-my-pokemon .cards .card .side-img {
@@ -64,26 +65,113 @@
 
 #app-web-pokedex-my-pokemon .cards .card img {
     max-width: 100%;
-    max-height: 150px;;
+    max-height: 150px;
 }
 
-#app-web-pokedex-my-pokemon .cards .card .paginations {
+#app-web-pokedex-my-pokemon .cards .card .size {
     width: 100%;
-    padding: 1em 1%;
+    display: flex;
+    flex-direction: row;
 }
 
-#app-web-pokedex-my-pokemon .paginations button{
-    border: none;
-    background-color: transparent;
-    color: #E73C7E;
-    font-size: 1.5em;
-    cursor: pointer;
+#app-web-pokedex-my-pokemon .cards .card .size p {
+    width: 31%;
+    margin: 0 1%;
+    text-align: center;
 }
 
-#app-web-pokedex-my-pokemon .paginations .previous{
-    float: left;
+//Media Screens
+@media screen and (max-width:1920px) {
+    #app-web-pokedex-my-pokemon {
+        position: fixed;
+        padding: 100px 30px 30px 100px;
+    }
+    #app-web-pokedex-my-pokemon .cards .card {
+        width: 23%;
+        margin: 1em 1%;
+    }
+    #app-web-pokedex-my-pokemon .cards .card .side-img {
+        width: 40%;
+        padding: 1em;
+    }
+    #app-web-pokedex-my-pokemon .cards .card .side-description {
+        width: 60%;
+        padding: 1em;
+        font-size: 1.1em;
+    }
+    #app-web-pokedex-my-pokemon .cards .card img {
+        max-width: 100%;
+        max-height: 150px;
+    }
+    #app-web-pokedex-my-pokemon .cards .card .size p {
+        width: 31%;
+        margin: 0 1%;
+    }
 }
 
-#app-web-pokedex-my-pokemon .paginations .next{
-    float: right;
+
+@media screen and (max-width:1600px) {
+    #app-web-pokedex-my-pokemon {
+        position: fixed;
+        padding: 90px 30px 30px 90px;
+    }
+    #app-web-pokedex-my-pokemon .cards .card {
+        width: 23%;
+        margin: 1em 1%;
+    }
+    #app-web-pokedex-my-pokemon .cards .card .side-img {
+        width: 40%;
+        padding: 1em;
+    }
+    #app-web-pokedex-my-pokemon .cards .card .side-description {
+        width: 60%;
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+    #app-web-pokedex-my-pokemon .cards .card img {
+        max-width: 100%;
+        max-height: 130px;
+    }
+    #app-web-pokedex-my-pokemon .cards .card .size p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    #app-web-pokedex-my-pokemon {
+        position: fixed;
+        padding: 85px 30px 30px 85px;
+    }
+    #app-web-pokedex-my-pokemon .cards .card h3 {
+        font-size: 1.1em;
+    }
+    #app-web-pokedex-my-pokemon .cards .card {
+        width: 31%;
+        margin: 1em 1%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #app-web-pokedex-my-pokemon {
+        position: fixed;
+        padding: 80px 30px 30px 80px;
+    }
+    #app-web-pokedex-my-pokemon .cards .card {
+        width: 48%;
+        margin: 1em 1%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #app-web-pokedex-my-pokemon {
+        position: relative;
+        padding: 60px 20px 20px 20px;
+    }
+    #app-web-pokedex-my-pokemon .cards .card {
+        width: 98%;
+        margin: 1em 1%;
+    }
+    #app-web-pokedex-my-pokemon .cards .card .size p {
+        font-size: 0.7em;
+    }
 }

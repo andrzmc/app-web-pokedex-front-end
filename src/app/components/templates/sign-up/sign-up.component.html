@@ -1,7 +1,7 @@
-<form>
-    <input type="text" placeholder="nombre*" required>
-    <input type="email" placeholder="my@email.com" required>
-    <input type="password" placeholder="contraseña" required>
-    <input type="password" placeholder="repetir contraseña" required>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="error" *ngIf="error">{{errorMessage}}</div>
+    <input type="email" formControlName="email" placeholder="my@email.com" required>
+    <input type="password" formControlName="password" placeholder="contraseña" required>
+    <input type="password" formControlName="passwordConfirm" placeholder="repetir contraseña" required>
     <button type="submit">Registrarse</button>
 </form>

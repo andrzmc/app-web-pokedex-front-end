@@ -2,20 +2,19 @@
     <div class="cards">
         <div class="card" *ngFor="let p of myCatalogue | orderBy: 'id'">
             <h3>
-                {{p.name}}
+                {{p.name}} 
                 <button (click)="removeFavorites(p.id)"><i class="ion-close-round"></i></button>
             </h3>
             <div class="side-img">            
                 <img [src]="p.sprites.other.dream_world.front_default" alt="{{p.name}}"/>
             </div>
             <div class="side-description">
-                <p><strong>Altura: </strong> {{p.height}}</p>
-                <p><strong>Peso: </strong> {{p.weight}}</p>
-                <p *ngFor="let s of p.stats"><strong>{{s.stat.name}}: </strong> {{s.base_stat}}</p>
                 <app-description [descriptionChildren]="p.species.url"></app-description>
             </div>
-            <div class="types">
-                <app-types [typesChildren]="p.types"></app-types>
+            <div class="size">
+                <p><app-types [typesChildren]="p.types"></app-types></p>
+                <p><strong>Altura: </strong> {{p.height / 10}} m.</p>
+                <p><strong>Peso: </strong> {{p.weight / 10}} Kg.</p>
             </div>
         </div>
     </div>

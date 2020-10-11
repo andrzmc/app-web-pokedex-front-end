@@ -3,8 +3,7 @@ import { PokemonService } from '../../../../services/pokemon/pokemon.service';
 
 @Component({
   selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  templateUrl: './main.component.html'
 })
 export class MainComponent implements OnInit {
 
@@ -15,13 +14,11 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.setPokemons(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=30`);
-  }
-
-  public setPokemons(page: string): void {
-    this.pokemon.setPagePokemonCatalogue(page).subscribe((data: any) => {
+    if (localStorage.getItem('pokemon-catalogue')) { return; }
+    this.pokemon.setPagePokemonCatalogue().subscribe((data: any) => {
       localStorage.setItem('pokemon-catalogue', JSON.stringify(data));
     });
   }
+  
 
 }

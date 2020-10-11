@@ -49,7 +49,14 @@ export class SignInComponent implements OnInit {
 
     this.error = false;
 
-    this.authService.Login(email.value, password.value);
+    this.authService.Login(email.value, password.value).then(
+      result => {
+        if (result.status !== 200) {
+          this.error = true;
+          this.errorMessage = result.message;
+        }
+      }
+    );
 
   }
 

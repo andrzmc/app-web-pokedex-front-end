@@ -16,7 +16,9 @@ export class PaginationPokemonComponent implements OnInit {
   constructor(private pokemon: PokemonService) { }
 
   ngOnInit(): void {
-    this.updateCatalogue();
+    setTimeout(() => {
+      this.updateCatalogue();
+    }, 1000);
   }
 
   public updateCatalogue(): void {
@@ -38,5 +40,6 @@ export class PaginationPokemonComponent implements OnInit {
       this.updateCatalogue();
     });
   }
+
 
 }

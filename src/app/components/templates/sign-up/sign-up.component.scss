@@ -1,3 +1,9 @@
+form .error {
+    text-align: center;
+    color: #D7332C;
+    font-size: 1em;
+}
+
 form input {
     font-weight: 400;
     font-size: 1em;
@@ -29,4 +35,37 @@ form button {
     border: none;
     background-color: #e73c7e;
     color: #fff;
+}
+
+
+//Media Screens
+@media screen and (max-width:1920px) {
+    form .error {
+        font-size: 1em;
+    }
+    form input {
+        font-size: 1em;
+        padding: 0.5em;
+        width: 80%;
+        margin: 1em 10%;
+    }
+    form button {
+        font-size: 1em;
+        width: 50%;
+        margin: 1em 25%;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    form input {
+        font-size: 0.9em;
+        padding: 0.5em;
+        width: 90%;
+        margin: 0.5em 5%;
+    }
+    form button {
+        font-size: 0.9em;
+        width: 50%;
+        margin: 0.5em 25%;
+    }
 }

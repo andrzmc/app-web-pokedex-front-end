@@ -23,7 +23,7 @@ export class PokemonService {
     return JSON.parse(localStorage.getItem('pokemon-catalogue'));
   }
 
-  public setPagePokemonCatalogue(page: string): Observable<Pokemon> {
+  public setPagePokemonCatalogue(page: string = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=24`): Observable<Pokemon> {
     return this.http.get(page).pipe(map((response: any) => response));
   }
 

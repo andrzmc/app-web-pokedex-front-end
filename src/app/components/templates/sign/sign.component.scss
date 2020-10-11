@@ -53,3 +53,90 @@
 #app-web-pokedex-sign .copyright p a {
     color: #e73c7e;
 }
+
+
+//Media Screens
+@media screen and (max-width:1920px) {
+    #app-web-pokedex-sign {
+        position: fixed;
+        width: 30%;
+        min-height: 100%;
+        padding: 1em;
+    }
+    #app-web-pokedex-sign h1 {
+        font-size: 1.7em;
+        padding: 1em 0;
+    }
+    #app-web-pokedex-sign img {
+        width: 40%;
+        margin: 1em 30%;
+    }
+    #app-web-pokedex-sign .go-to {
+        padding: 2em 1em;
+    }
+    #app-web-pokedex-sign .go-to a{
+       margin-left: 0.5em;
+    }
+    #app-web-pokedex-sign .copyright {
+        position: absolute;
+        padding: 1em;
+    }
+    #app-web-pokedex-sign .copyright p {
+        font-size: 0.7em;
+        margin: 0.1em;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    #app-web-pokedex-sign h1 {
+        font-size: 1.5em;
+        padding: 1em 0;
+    }
+    #app-web-pokedex-sign img {
+        width: 30%;
+        margin: 1em 35%;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    #app-web-pokedex-sign .copyright p {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #app-web-pokedex-sign {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #app-web-pokedex-sign {
+        position: relative;
+        width: 100%;
+        padding: 1em;
+    }
+    #app-web-pokedex-sign h1 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+    #app-web-pokedex-sign .copyright {
+        position: relative;
+        padding: 1em;
+        margin-top: 1em;
+        font-size: 1em;
+    }
+    #app-web-pokedex-sign .copyright p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #app-web-pokedex-sign img {
+        width: 50%;
+        margin: 1em 25%;
+    }
+    #app-web-pokedex-sign .copyright p{
+        font-size: 0.8em;
+    }
+}
