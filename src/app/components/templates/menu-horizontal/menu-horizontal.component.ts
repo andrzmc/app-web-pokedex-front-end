@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AuthenticationService } from '../../../services/authentication/authentication.service';
 
 @Component({
@@ -7,6 +7,8 @@ import { AuthenticationService } from '../../../services/authentication/authenti
   styleUrls: ['./menu-horizontal.component.scss']
 })
 export class MenuHorizontalComponent implements OnInit {
+
+  @Input() username: any;
 
   constructor(private authService: AuthenticationService) { }
 

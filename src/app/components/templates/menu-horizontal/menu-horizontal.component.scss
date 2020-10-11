@@ -40,28 +40,30 @@
     cursor: pointer;
 }
 
-#app-web-pokedex-menu-horizontal .menu-item-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-#app-web-pokedex-menu-horizontal .menu-item-actions i {
-    width: 50%;
-    text-align: left;
-    color: #363636;
-    
-}
-
 .dropdown-toggle:empty::after {
     margin-left: 0;
     display: none;
 }
 
-#app-web-pokedex-menu-horizontal .menu-item-actions span {
-    width: 50%;
-    text-align: right;
-    color: #363636;
+#app-web-pokedex-menu-horizontal .dropdown-menu .title{
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: #ccc 1px solid;
+    cursor: default;
+}
+
+#app-web-pokedex-menu-horizontal .dropdown-menu .title span {
+    color: #999;
+}
+
+#app-web-pokedex-menu-horizontal .dropdown-menu button{
+    width: 100%;
+    padding: 0.3em 0.5em;
+}
+
+#app-web-pokedex-menu-horizontal .dropdown-menu button span {
+    float: right;
 }
 
 

@@ -19,6 +19,7 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   public getPokemonCatalogue(): any {
+    if (!localStorage.getItem('pokemon-favorite')) { localStorage.setItem('pokemon-favorite', JSON.stringify([])); }
     return JSON.parse(localStorage.getItem('pokemon-catalogue'));
   }
 

@@ -1,0 +1,6 @@
+<button *ngIf="!status" (click)="addFavorites(itemChildren)">
+    <i class="ion-ios-heart-outline"></i>
+</button>
+<button *ngIf="status" (click)="removeFavorites(itemChildren.id)">
+    <i class="ion-ios-heart"></i>
+</button>

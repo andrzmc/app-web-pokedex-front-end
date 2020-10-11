@@ -8,10 +8,10 @@ import { PokemonService } from '../../../../services/pokemon/pokemon.service';
 })
 export class MainComponent implements OnInit {
 
-  public auth: string;
+  public auth: any;
 
   constructor(private pokemon: PokemonService) {
-    this.auth = sessionStorage.getItem('user');
+    this.auth = JSON.parse(sessionStorage.getItem('user'));
   }
 
   ngOnInit(): void {

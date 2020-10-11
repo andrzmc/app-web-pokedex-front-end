@@ -23,6 +23,10 @@ import { MenuHorizontalComponent } from './components/templates/menu-horizontal/
 import { MenuVerticalComponent } from './components/templates/menu-vertical/menu-vertical.component';
 import { PaginationPokemonComponent } from './components/templates/pagination-pokemon/pagination-pokemon.component';
 import { DescriptionComponent } from './components/templates/description/description.component';
+import { TypesComponent } from './components/templates/types/types.component';
+import { FavoritesComponent } from './components/views/auth-views/favorites/favorites.component';
+import { MyPokemonComponent } from './components/templates/my-pokemon/my-pokemon.component';
+import { ActionFavoritesComponent } from './components/templates/action-favorites/action-favorites.component';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { DescriptionComponent } from './components/templates/description/descrip
     MenuHorizontalComponent,
     MenuVerticalComponent,
     PaginationPokemonComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    TypesComponent,
+    FavoritesComponent,
+    MyPokemonComponent,
+    ActionFavoritesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,5 @@
+<div class="types-icon" *ngIf="types">
+    <div *ngFor="let t of types" class="icon" [ngStyle]="setColorType(t.name)">
+        <img [src]="t.img" alt="{{t.name}}">
+    </div>
+</div>

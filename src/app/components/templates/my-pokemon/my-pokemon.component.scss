@@ -1,4 +1,4 @@
-#app-web-pokedex-pagination-pokemon {
+#app-web-pokedex-my-pokemon {
     background-color: #fbfbfb;
     position: fixed;
     top: 0;
@@ -9,7 +9,7 @@
     padding: 100px 30px 30px 100px;
 }
 
-#app-web-pokedex-pagination-pokemon .cards {
+#app-web-pokedex-my-pokemon .cards {
     display: flex;
     width: 100%;
     height: auto;
@@ -21,7 +21,7 @@
     border: none;
 }
 
-#app-web-pokedex-pagination-pokemon .cards .card {
+#app-web-pokedex-my-pokemon .cards .card {
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -36,37 +36,43 @@
     flex-direction: row;
 }
 
-#app-web-pokedex-pagination-pokemon .cards .card h3 {
+#app-web-pokedex-my-pokemon .cards .card h3 {
     font-weight: 300;
     text-align: center;
     text-transform: capitalize;
     width: 100%;
 }
 
+#app-web-pokedex-my-pokemon .cards .card button {
+    float: right;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+}
 
-#app-web-pokedex-pagination-pokemon .cards .card .side-img {
+#app-web-pokedex-my-pokemon .cards .card .side-img {
     width: 40%;
     padding: 1em;
 }
 
-#app-web-pokedex-pagination-pokemon .cards .card .side-description {
+#app-web-pokedex-my-pokemon .cards .card .side-description {
     width: 60%;
     padding: 1em;
     font-size: 1.1em;
     color: #555;
 }
 
-#app-web-pokedex-pagination-pokemon .cards .card img {
+#app-web-pokedex-my-pokemon .cards .card img {
     max-width: 100%;
     max-height: 150px;;
 }
 
-#app-web-pokedex-pagination-pokemon .cards .card .paginations {
+#app-web-pokedex-my-pokemon .cards .card .paginations {
     width: 100%;
     padding: 1em 1%;
 }
 
-#app-web-pokedex-pagination-pokemon .paginations button{
+#app-web-pokedex-my-pokemon .paginations button{
     border: none;
     background-color: transparent;
     color: #E73C7E;
@@ -74,10 +80,10 @@
     cursor: pointer;
 }
 
-#app-web-pokedex-pagination-pokemon .paginations .previous{
+#app-web-pokedex-my-pokemon .paginations .previous{
     float: left;
 }
 
-#app-web-pokedex-pagination-pokemon .paginations .next{
+#app-web-pokedex-my-pokemon .paginations .next{
     float: right;
 }
